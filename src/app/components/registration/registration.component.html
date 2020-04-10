@@ -1,0 +1,10 @@
+<form style="display: flex; flex-direction: column" #registrationForm = "ngForm" (ngSubmit)="register()">
+  <p>Register</p>
+  <input [(ngModel)]="name" type="text" name="name" id="firstName" class="input-field" placeholder="First Name">
+  <input [(ngModel)]="surname" type="text" name="surname" id="surname" class="input-field" placeholder="Surname">
+  <input [(ngModel)]="username" type="text" name="username" id="username" class="input-field" placeholder="Username">
+  <input [(ngModel)]="password" type="password" name="password" id="password" class="input-field" placeholder="Password">
+  <input [(ngModel)]="passwordConfirmation" type="password" name="password" id="passwordConfirmation" class="input-field" placeholder="Confirm password">
+  <button class="btn btn-success" onclick="alert('Are you sure you want to join?');">ENTER</button>
+  <p>Hope you like our web-site {{name}} {{surname}}</p>
+</form>
